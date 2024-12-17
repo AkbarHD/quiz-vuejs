@@ -6,7 +6,9 @@ import {
 const router = createRouter({
     history: createWebHashHistory(
         import.meta.env.BASE_URL),
-    routes: [{
+    routes: [
+
+        {
             path: "/",
             name: "quizes",
             component: () => import('../views/Quizes.vue')

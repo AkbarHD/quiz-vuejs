@@ -1,11 +1,13 @@
 <script setup>
 // const props = defineProps(['quiz'])
+import { defineProps } from 'vue';
 import { useRouter } from 'vue-router';
 const { quiz } = defineProps(['quiz'])
 
 const router = useRouter();
 // console.log(props);
 // console.log(quiz);
+// console.log(router);
 
 function goToQuiz() {
   // manggilnya pake name bukan pake path
