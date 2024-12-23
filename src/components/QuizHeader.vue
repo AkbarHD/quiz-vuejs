@@ -1,12 +1,15 @@
 <script setup>
     import { defineProps } from 'vue';
-    const { questionPage } = defineProps(['questionPage']);
+const { questionPage, barPercentTage } = defineProps([
+    'questionPage',
+    'barPercentTage'
+]);
 </script>
 <template>
     <header>
         <h4>Question {{ questionPage }}</h4>
         <div class="bar">
-            <div class="bar-progress"></div>
+            <div class="bar-progress" :style="{ width: barPercentTage}"></div>
         </div>
     </header>
 </template>
@@ -26,7 +29,7 @@
     }
 
     header .bar .bar-progress{
-        width: 50%;
+        width: 0%;
         height: 100%;
         background-color: #adf7b6;
     }
