@@ -7,9 +7,9 @@ const props = defineProps([
 </script>
 <template>
     <header>
-        <h4>Question {{ questionPage }}</h4>
+        <h4>Question {{ props.questionPage }}</h4>
         <div class="bar">
-            <div class="bar-progress" :style="{ width: barPercentTage }"></div>
+            <div class="bar-progress" :style="{ width: props.barPercentTage }"></div>
         </div>
     </header>
 </template>

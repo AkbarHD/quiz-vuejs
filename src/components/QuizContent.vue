@@ -3,14 +3,14 @@ import { defineProps } from 'vue';
 const { question } = defineProps(['question']);
 
 // fungsi emit mengirimkan data dari child ke parent
-const emit = defineEmits(['selectOption']);
+const emitt = defineEmits(['selectOption']);
 function emitSelectOption(tai) {
-    emit('selectOption', tai);
+    emitt('selectOption', tai);
 }
 </script>
 <template>
     <section id="question-container">
-        */
+        <h2 class="question-title">{{ question.text }}</h2>
     </section>
 
     <section id="options-container"> <!-- pilih salah satu jawaban -->
